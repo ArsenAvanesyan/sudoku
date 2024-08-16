@@ -1,3 +1,4 @@
-const { prettyBoard } = require("./sudoku")
-
-(function runner() {prettyBoard();})();
+const { prettyBoard } = require("./sudoku");
+(function runner() {
+  prettyBoard();
+})();
