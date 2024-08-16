@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 function read() {
   /**
    * Прочесть файл puzzles.txt в кодировке 'utf-8' и вернуть эти данные из функции
@@ -25,3 +27,9 @@ function prettyBoard() {
    * Подумай, как симпатичнее его вывести.
    */
 }
+
+module.export = {
+  read,
+  solve,
+  prettyBoard,
+};
