@@ -1,4 +1,3 @@
-const { log } = require("console");
 const fs = require("fs");
 
 function read() {
@@ -55,14 +54,11 @@ function read() {
         }
       }
     }
-    sudokuPlace.push(sudokuPlace1, sudokuPlace2, sudokuPlace3);
-    allSudokusSorted.push(sudokuPlace);
+    allSudokusSorted.push(sudokuPlace1);
   }
 
   return allSudokusSorted;
 }
-
-function read() {}
 
 function solve(board) {
   const len = 9;
@@ -136,11 +132,11 @@ function solve(board) {
 }
 
 function prettyBoard(board) {
-  const table = board.map((el) => el.split('').map((n) => (n === '-' ? ' ' : n)));
+  const table = board.map((n) => (n === "-" ? " " : n));
   console.table(table);
 }
 
-module.export = {
+module.exports = {
   read,
   solve,
   prettyBoard,
