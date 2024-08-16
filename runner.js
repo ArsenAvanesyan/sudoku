@@ -1,1 +1,4 @@
-// Используйте для решения судоку необходимые функции из файла sudoku.js
+const { prettyBoard } = require("./sudoku");
+(function runner() {
+  prettyBoard();
+})();
